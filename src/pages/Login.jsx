@@ -10,7 +10,6 @@ export default function Login() {
     const [loginError, setLoginError] = useState(false)
     const { register, handleSubmit, formState } = useForm()
     const navigator = useNavigate()
-    console.log(credentials)
     const submitHandler = data => {
         if (data.email === 'koda@email.com' && data.password === '1234') {
             credentials.setUser(data)
