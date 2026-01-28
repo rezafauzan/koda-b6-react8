@@ -1,15 +1,11 @@
 import { RiLockPasswordFill } from "react-icons/ri"; 
 import { AiOutlineMail } from "react-icons/ai"; 
-import { useForm } from "react-hook-form";
-function App() {
-    const {register, handleSubmit} = useForm()
 
-    const submitHandler = data => {
-        console.log(data)
-    }
+function App() {
+    
     return (
         <div className="w-xl mx-auto bg-white rounded p-4 m-4">
-            <form className="flex w-full flex-col justify-center gap-4 p-4 flex-3" onSubmit={submitHandler}>
+            <form className="flex w-full flex-col justify-center gap-4 p-4 flex-3" >
                         <h1 className="font-bold text-(--color-accent)">Login</h1>
                         <label htmlFor="email" className="font-bold text-black">Email</label>
                         <label className="flex items-center gap-4 p-4 border rounded border-black/40">
