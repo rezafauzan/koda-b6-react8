@@ -8,13 +8,12 @@ const Home = () => {
     const navigator = useNavigate()
 
     useEffect(
-        () => {
-            if (credentials.user == null) {
+        ()=>{
+            console.log(credentials)
+            if(credentials.user.length < 1){
                 navigator("/login")
-            } else {
-                setLoggedInUser(credentials.user.email)
             }
-        }, []
+        },[]
     )
     return (
         <div className="w-xl mx-auto bg-white rounded p-4 m-4">
